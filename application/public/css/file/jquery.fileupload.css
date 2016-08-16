@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*
+ * jQuery File Upload Plugin CSS
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+.fileinput-button {
+      position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 20%;
+    height: 20px;
+    float: left;
+}
+.fileinput-button input {
+  position: absolute;
+    bottom: 0;
+    right: 2;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px !important;
+    direction: ltr;
+    cursor: pointer;
+    width: 100%;
+    z-index: 4
+}
+.fileinput-button span {
+
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
+    filter: alpha(opacity=0);
+    font-size: 100%;
+    height: 100%;
+  }
+}
